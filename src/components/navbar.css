@@ -128,26 +128,61 @@ nav .material-symbols-outlined {
     color: white;
 }
 
+.top-bar{
+    display: none;
+}
+
 @media only screen and (max-width: 920px) {
     nav {
         flex-direction: column;
-        width: 20vw;
+        width: 50vw;
         height: 100vh;
         position: fixed;
+        left: -100%;
     }
 
-    .navbar-searchbox input {
-        display: none;
+    nav-handle {
+        left: 0%;
     }
 
+    nav .material-symbols-outlined {
+        position: absolute;
+        top: 1rem;
+        left: 39vw;
+    }
+
+    .navbar-searchbox {
+        width: 90%;
+        margin: 1rem auto;
+        height: 10%;
+    }
+
+    .navbar-icon {
+        width: 90%;
+        margin: 1rem auto;
+        justify-content: start;
+    }
+
+    .navbar-items {
+        width: 100%;
+    }
     .navbar-items ul {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        width: 100%;
     }
 
     .navbar-items ul li {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
         height: 2rem;
         padding: 1rem 0;
+    }
+
+
+    .navbar-items ul li .material-icons {
+        padding-right: 1rem;
     }
 }

@@ -2,10 +2,23 @@ import React from "react";
 import './navbar.css'
 
 export default function Navbar() {
+    const navHandle = () => {
+        const element = document.getElementById('nav-menu')
+        element.classList.toggle('nav-handle')
+    }
     return (
-        <>
-            <nav>
-                <span class="material-symbols-outlined">
+        <>  
+            <div className="top-bar">
+                <span class="material-symbols-outlined top-bar-menu" onClick={navHandle} >
+                    menu
+                </span>
+                <div className="navbar-icon-topbar">
+                    {/* img */}
+                    <a href="/">ECOMMERCE-STORE</a>
+                </div>
+            </div>
+            <nav id="nav-menu">
+                <span class="material-symbols-outlined" onClick={navHandle}>
                     menu
                 </span>
                 <div className="navbar-icon">
