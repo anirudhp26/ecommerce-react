@@ -1,5 +1,5 @@
 import React from "react";
-import '/navbar.css'
+import './navbar.css'
 
 export default function Navbar() {
     return (
@@ -21,9 +21,11 @@ export default function Navbar() {
                             home
                         </span>HOME</li>
                         <li><span class="material-icons">
-                            add_shopping_cart
+                            shopping_cart
                         </span>CART</li>
-                        <li>DEALS</li>
+                        <li><span class="material-icons">
+                            filter_alt
+                        </span>GENRE</li>
                     </ul>
                 </div>
                 <div className="navbar-user">
