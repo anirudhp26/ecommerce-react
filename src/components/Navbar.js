@@ -26,7 +26,7 @@ export default function Navbar() {
                     <a href="/">ECOMMERCE-STORE</a>
                 </div>
                 <div className="navbar-searchbox">
-                    <input type='text' placholder='Search' className='search-box' />
+                    <input type='text' placholder='Search' className='search-box    ' />
                 </div>
                 <div className="navbar-items">
                     <ul>
