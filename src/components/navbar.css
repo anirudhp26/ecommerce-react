@@ -161,7 +161,6 @@ body {
     .top-bar-menu {
         display: flex;
         cursor: pointer;
-
         user-select: none;
     }
 
